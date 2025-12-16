@@ -19,6 +19,18 @@ function checkEmail() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const countBtn = document.getElementById("count-btn");
+  const emailBtn = document.getElementById("email-btn");
+
+  if (countBtn) {
+    countBtn.addEventListener("click", countCharacters);
+  }
+
+  if (emailBtn) {
+    emailBtn.addEventListener("click", checkEmail);
+  }
+});
 
 /*
 Author: Julliana Onor
