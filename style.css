@@ -1,1 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #ffd6e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mp-app {
+  width: min(960px, 95vw);
+  background: #ffe4ee;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(255, 150, 190, 0.35);
+  padding: 26px 34px 30px;
+}
+
+.mp-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  color: #222;
+  padding-bottom: 20px;
+}
+
+.mp-card {
+  background: #ffeef6;
+  border-radius: 18px;
+  border: 1px solid #ffd1e0;
+  padding: 18px 22px 20px;
+  margin-top: 16px;
+}
+
+.mp-card:first-of-type {
+  margin-top: 0;
+}
+
+.mp-card-header {
+  margin-bottom: 12px;
+}
+
+.mp-card-header h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111;
+}
+
+.mp-label {
+  display: block;
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.mp-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ffd1e0;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #111;
+  background: #fff;
+  outline: none;
+}
+
+.mp-input::placeholder {
+  color: #c6869a;
+}
+
+.mp-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.mp-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 26px;
+  background: #ffb4cb;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.mp-output-label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.mp-output {
+  width: 260px;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #ff9fbd;
+  font-size: 14px;
+  color: #111;
+  font-weight: 600;
+  display: inline-block;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .mp-app {
+    padding: 20px 16px 22px;
+    border-radius: 20px;
+  }
+
+  .mp-card {
+    padding: 16px;
+  }
+}
